@@ -68,18 +68,20 @@ export default function useScrollReveal() {
       });
 
       // Hero/banner backdrop images — move slower than foreground content
-      gsap.utils.toArray('.parallax-hero-bg').forEach((el) => {
-        gsap.to(el, {
-          yPercent: 18,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: el.closest('section') || el.parentElement,
-            start: 'top top',
-            end: 'bottom top',
-            scrub: 1
-          }
+      if (window.innerWidth >= 768) {
+        gsap.utils.toArray('.parallax-hero-bg').forEach((el) => {
+          gsap.to(el, {
+            yPercent: 18,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: el.closest('section') || el.parentElement,
+              start: 'top top',
+              end: 'bottom top',
+              scrub: 1
+            }
+          });
         });
-      });
+      }
     }, rootRef);
 
     return () => ctx.revert();
