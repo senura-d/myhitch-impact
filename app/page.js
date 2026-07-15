@@ -129,7 +129,7 @@ export default function Home() {
       {/* 1. Hero Section */}
       <section className="hero-section snap-section">
         {/* Hero Backdrop Image */}
-        <div className="parallax-hero-bg"></div>
+        <div className="parallax-hero-bg" style={{ backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/home.png")` }}></div>
 
         <div className="hero-content-anchor">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', maxWidth: '540px' }}>
