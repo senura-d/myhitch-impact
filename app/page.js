@@ -492,9 +492,9 @@ export default function Home() {
                   <span style={{ fontSize: '0.85rem', fontWeight: 'bold', color: '#000000', fontFamily: 'var(--font-heading)' }}>MYHITCH AI CO-PILOT</span>
                 </div>
                 <div style={{ display: 'flex', gap: '5px' }}>
-                  <button onClick={() => setAiStep(0)} style={{ width: '8px', height: '8px', borderRadius: '50%', background: aiStep === 0 ? '#24A1DC' : 'rgba(15, 23, 42, 0.15)', border: 'none', cursor: 'pointer' }}></button>
-                  <button onClick={() => setAiStep(1)} style={{ width: '8px', height: '8px', borderRadius: '50%', background: aiStep === 1 ? '#24A1DC' : 'rgba(15, 23, 42, 0.15)', border: 'none', cursor: 'pointer' }}></button>
-                  <button onClick={() => setAiStep(2)} style={{ width: '8px', height: '8px', borderRadius: '50%', background: aiStep === 2 ? '#24A1DC' : 'rgba(15, 23, 42, 0.15)', border: 'none', cursor: 'pointer' }}></button>
+                  <button onClick={() => setAiStep(0)} style={{ width: '8px', height: '8px', flexShrink: 0, borderRadius: '50%', background: aiStep === 0 ? '#24A1DC' : 'rgba(15, 23, 42, 0.15)', border: 'none', cursor: 'pointer' }}></button>
+                  <button onClick={() => setAiStep(1)} style={{ width: '8px', height: '8px', flexShrink: 0, borderRadius: '50%', background: aiStep === 1 ? '#24A1DC' : 'rgba(15, 23, 42, 0.15)', border: 'none', cursor: 'pointer' }}></button>
+                  <button onClick={() => setAiStep(2)} style={{ width: '8px', height: '8px', flexShrink: 0, borderRadius: '50%', background: aiStep === 2 ? '#24A1DC' : 'rgba(15, 23, 42, 0.15)', border: 'none', cursor: 'pointer' }}></button>
                 </div>
               </div>
 
@@ -637,14 +637,17 @@ export default function Home() {
             </p>
 
             {/* Tab Controls */}
-            <div style={{
+            <div className="hide-scrollbar" style={{
               display: 'inline-flex',
               background: '#fff',
               border: '1px solid var(--card-border)',
               boxShadow: 'var(--shadow-sm)',
               borderRadius: '9999px',
               padding: '4px',
-              marginTop: '1.5rem'
+              marginTop: '1.5rem',
+              maxWidth: '100%',
+              overflowX: 'auto',
+              WebkitOverflowScrolling: 'touch'
             }}>
               {Object.keys(solutions).map((tab) => (
                 <button
@@ -661,7 +664,9 @@ export default function Home() {
                     fontWeight: 600,
                     cursor: 'pointer',
                     transition: 'all 0.2s ease',
-                    textTransform: 'uppercase'
+                    textTransform: 'uppercase',
+                    whiteSpace: 'nowrap',
+                    flexShrink: 0
                   }}
                 >
                   {tab === 'ngos' && 'NGOs & Charities'}
