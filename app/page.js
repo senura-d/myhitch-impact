@@ -135,7 +135,7 @@ export default function Home() {
           left: 0,
           right: 0,
           bottom: '-10%',
-          backgroundImage: 'url("/home.png")',
+          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/home.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'right center',
           opacity: 1,

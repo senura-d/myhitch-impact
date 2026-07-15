@@ -162,7 +162,7 @@ function SolutionsContent() {
           left: 0,
           right: 0,
           bottom: '-10%',
-          backgroundImage: 'url("/solutions.png")',
+          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/solutions.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           opacity: 1,

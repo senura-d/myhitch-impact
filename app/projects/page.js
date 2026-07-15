@@ -62,7 +62,7 @@ export default function Projects() {
           left: 0,
           right: 0,
           bottom: '-10%',
-          backgroundImage: 'url("/Projects.png")',
+          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Projects.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 0,

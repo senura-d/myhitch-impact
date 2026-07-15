@@ -31,7 +31,7 @@ export default function Footer() {
               display: 'flex',
               alignItems: 'center'
             }}>
-              <img src="/logo.png" alt="MYHitch Impact" style={{ height: '120px', objectFit: 'contain' }} />
+              <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} alt="MYHitch Impact" style={{ height: '120px', objectFit: 'contain' }} />
             </Link>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
               Empowering global community development, education, and social enterprises through modular software, data intelligence, transparency, and AI-powered operational tools.

@@ -118,7 +118,7 @@ export default function Navbar() {
           alignItems: 'center',
           flexShrink: 0
         }}>
-          <img src="/logo.png" alt="MYHitch Impact" style={{ height: '75px', objectFit: 'contain' }} className="navbar-logo" />
+          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} alt="MYHitch Impact" style={{ height: '75px', objectFit: 'contain' }} className="navbar-logo" />
         </Link>
 
         {/* Desktop Menu */}

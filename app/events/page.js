@@ -39,7 +39,7 @@ export default function Events() {
           left: 0,
           right: 0,
           bottom: '-10%',
-          backgroundImage: 'url("/Events.png")',
+          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Events.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 0,

@@ -136,7 +136,7 @@ Based on the prompt, MYHitch Impact AI Intelligence has generated the following 
           left: 0,
           right: 0,
           bottom: '-10%',
-          backgroundImage: 'url("/ai agent.png")',
+          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/ai agent.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 0,

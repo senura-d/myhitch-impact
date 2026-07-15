@@ -36,7 +36,7 @@ export default function CaseStudies() {
           left: 0,
           right: 0,
           bottom: '-10%',
-          backgroundImage: 'url("/case study .png")',
+          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/case study .png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 0,

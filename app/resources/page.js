@@ -25,7 +25,7 @@ export default function Resources() {
           left: 0,
           right: 0,
           bottom: '-10%',
-          backgroundImage: 'url("/Resource Centre.png")',
+          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Resource Centre.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 0,

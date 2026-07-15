@@ -35,7 +35,7 @@ export default function Fundraising() {
           left: 0,
           right: 0,
           bottom: '-10%',
-          backgroundImage: 'url("/Fundraising.png")',
+          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Fundraising.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 0,

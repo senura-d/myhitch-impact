@@ -31,7 +31,7 @@ export default function About() {
           left: 0,
           right: 0,
           bottom: '-10%',
-          backgroundImage: 'url("/about us .png")',
+          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/about us .png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 0,

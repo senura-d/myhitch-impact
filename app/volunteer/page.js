@@ -35,7 +35,7 @@ export default function Volunteer() {
           left: 0,
           right: 0,
           bottom: '-10%',
-          backgroundImage: 'url("/Volunteer Management.png")',
+          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Volunteer Management.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 0,

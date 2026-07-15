@@ -28,7 +28,7 @@ export default function Contact() {
           left: 0,
           right: 0,
           bottom: '-10%',
-          backgroundImage: 'url("/contact.png")',
+          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/contact.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 0,

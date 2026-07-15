@@ -89,7 +89,7 @@ export default function LoginPage() {
             <ArrowLeft size={16} /> Back to Home
           </Link>
           <Link href="/" className="login-mobile-logo" style={{ display: 'flex', alignItems: 'center' }}>
-            <img src="/logo.png" alt="MYHitch Impact" style={{ height: '36px', objectFit: 'contain' }} />
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} alt="MYHitch Impact" style={{ height: '36px', objectFit: 'contain' }} />
           </Link>
         </div>
 
