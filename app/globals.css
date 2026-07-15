@@ -123,10 +123,12 @@ html {
   .hero-section {
     min-height: calc(100vh - 60px);
     min-height: calc(100dvh - 60px);
+    overflow: hidden;
   }
   .parallax-hero-bg {
     background-size: cover;
-    background-position: center;
+    background-position: top center;
+    bottom: -40%; /* Push the bottom UI graphic outside the container */
   }
   .hero-section::before {
     content: '';
