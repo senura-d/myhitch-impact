@@ -81,8 +81,8 @@ html {
 }
 
 .snap-section {
-  min-height: calc(100vh - 85px);
-  min-height: calc(100svh - 85px);
+  min-height: calc(100vh - 60px);
+  min-height: calc(100svh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,8 +107,8 @@ html {
    of that busy imagery, so wash it out with a scrim for legibility. */
 @media (max-width: 767px) {
   .hero-section {
-    min-height: calc(100vh - 85px);
-    min-height: calc(100svh - 85px);
+    min-height: calc(100vh - 60px);
+    min-height: calc(100svh - 60px);
   }
   .hero-section::before {
     content: '';
@@ -130,6 +130,10 @@ html {
 @media (min-width: 768px) {
   .hero-content-anchor {
     left: 4%;
+  }
+  .snap-section {
+    min-height: calc(100vh - 85px);
+    min-height: calc(100svh - 85px);
   }
 }
 
@@ -186,6 +190,23 @@ p {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 var(--space-md);
+}
+
+.navbar-container {
+  height: 60px;
+}
+.navbar-logo {
+  height: 45px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .navbar-container {
+    height: 85px;
+  }
+  .navbar-logo {
+    height: 75px;
+  }
 }
 
 /* Gradients */

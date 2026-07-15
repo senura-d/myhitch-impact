@@ -106,11 +106,10 @@ export default function Navbar() {
       borderBottom: '1px solid var(--card-border)',
       transition: 'all 0.3s ease'
     }}>
-      <div className="container" style={{
+      <div className="container navbar-container" style={{
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-between',
-        height: '85px'
+        justifyContent: 'space-between'
       }}>
         {/* Logo */}
         <Link href="/" style={{
@@ -118,7 +117,7 @@ export default function Navbar() {
           alignItems: 'center',
           flexShrink: 0
         }}>
-          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} alt="MYHitch Impact" style={{ height: '75px', objectFit: 'contain' }} className="navbar-logo" />
+          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} alt="MYHitch Impact" className="navbar-logo" />
         </Link>
 
         {/* Desktop Menu */}
