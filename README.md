@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MYHitch Impact
 
-## Getting Started
+Welcome to the **MYHitch Impact** platform. 
+MYHitch Impact is an advanced, AI-powered software suite tailored to empower NGOs, charities, educational institutions, and social enterprises. 
 
-First, run the development server:
+## 🌍 Empowering Communities Through Technology
+
+Our verified, unified platform provides organizations with absolute transparency and enterprise-grade tools to scale their social impact worldwide. Manage everything from fundraising and volunteers to complex data analytics from a single dashboard.
+
+### Core Modules
+* **Fundraising Platform**: Secure donation portals, monthly giving programs, and automated tax receipts.
+* **Volunteer Management**: Opportunity matching, scheduling, hours tracking, and automated digital certificates.
+* **Event Management**: Ticketing via MYHitch Pass, event landing pages, check-ins, and dinner appeals.
+* **AI Impact Assistant**: Auto-generate grant proposals, social media copy, translated reports, and budgets.
+* **Analytics & KPIs**: Dynamic donor behaviors, campaign tracking, geographic distributions, and SDG alignment.
+* **Governance & PME**: Project monitoring, board meeting agendas, risk registers, and document compliance.
+
+### Built With
+* Next.js
+* React
+* CSS Grid & Flexbox (Responsive Design)
+* Lucide Icons
+
+### Getting Started
+
+To run the platform locally for development:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is configured to deploy automatically to GitHub Pages using GitHub Actions. Any pushes to the `main` branch will trigger a static HTML export (`out` directory) and publish it to the `gh-pages` environment.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Trusted by 14,200+ verified organizations worldwide.*
