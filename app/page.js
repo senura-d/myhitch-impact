@@ -129,19 +129,7 @@ export default function Home() {
       {/* 1. Hero Section */}
       <section className="hero-section snap-section">
         {/* Hero Backdrop Image */}
-        <div className="parallax-hero-bg" style={{
-          position: 'absolute',
-          top: '-10%',
-          left: 0,
-          right: 0,
-          bottom: '-10%',
-          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/home.png")`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'right center',
-          opacity: 1,
-          zIndex: 0,
-          pointerEvents: 'none'
-        }}></div>
+        <div className="parallax-hero-bg"></div>
 
         <div className="hero-content-anchor" style={{ position: 'relative', zIndex: 1, marginTop: '2rem' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', maxWidth: '540px' }}>
