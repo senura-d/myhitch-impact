@@ -115,7 +115,10 @@ export default function Navbar() {
         <Link href="/" style={{
           display: 'flex',
           alignItems: 'center',
-          flexShrink: 0
+          justifyContent: 'center',
+          flexShrink: 0,
+          height: '100%',
+          overflow: 'hidden'
         }}>
           <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`} alt="MYHitch Impact" className="navbar-logo" />
         </Link>
@@ -392,11 +395,6 @@ export default function Navbar() {
 
       {/* Adding custom responsive CSS inside component to maintain single file and satisfy responsive requirements */}
       <style jsx global>{`
-        @media (min-width: 640px) {
-          .navbar-logo {
-            height: 75px !important;
-          }
-        }
         @media (min-width: 1024px) {
           .desktop-nav {
             display: flex !important;

@@ -54,6 +54,13 @@
   --border-radius-sm: 8px;
   --border-radius-md: 16px;
   --border-radius-lg: 24px;
+  --navbar-height: 50px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --navbar-height: 70px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -81,8 +88,8 @@ html {
 }
 
 .snap-section {
-  min-height: calc(100vh - 60px);
-  min-height: calc(100dvh - 60px);
+  min-height: calc(100vh - var(--navbar-height));
+  min-height: calc(100dvh - var(--navbar-height));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,8 +130,8 @@ html {
    of that busy imagery, so wash it out with a scrim for legibility. */
 @media (max-width: 767px) {
   .hero-section {
-    min-height: calc(100vh - 60px);
-    min-height: calc(100dvh - 60px);
+    min-height: calc(100vh - var(--navbar-height));
+    min-height: calc(100dvh - var(--navbar-height));
     overflow: hidden;
   }
   .parallax-hero-bg {
@@ -163,15 +170,15 @@ html {
     background-position: right center;
   }
   .snap-section {
-    min-height: calc(100vh - 85px);
-    min-height: calc(100dvh - 85px);
+    min-height: calc(100vh - var(--navbar-height));
+    min-height: calc(100dvh - var(--navbar-height));
   }
 }
 
 @media (min-width: 1024px) {
   .hero-section {
-    min-height: calc(100vh - 85px);
-    min-height: calc(100dvh - 85px);
+    min-height: calc(100vh - var(--navbar-height));
+    min-height: calc(100dvh - var(--navbar-height));
   }
   .hero-content-anchor {
     left: 5%;
@@ -249,19 +256,16 @@ p {
 }
 
 .navbar-container {
-  height: 60px;
+  height: var(--navbar-height);
 }
 .navbar-logo {
-  height: 45px;
+  height: 150%;
   object-fit: contain;
 }
 
 @media (min-width: 768px) {
-  .navbar-container {
-    height: 85px;
-  }
   .navbar-logo {
-    height: 75px;
+    height: 150%;
   }
 }
 
@@ -515,7 +519,7 @@ p {
 
 /* Navigation Component Stylings */
 .navbar-spacer {
-  height: 85px;
+  height: var(--navbar-height);
 }
 
 .nav-link {
