@@ -130,20 +130,9 @@ Based on the prompt, MYHitch Impact AI Intelligence has generated the following 
     <div ref={rootRef} style={{ position: 'relative' }}>
       {/* Hero */}
       <section className="hero-section snap-section">
-        <div className="parallax-hero-bg" style={{
-          position: 'absolute',
-          top: '-10%',
-          left: 0,
-          right: 0,
-          bottom: '-10%',
-          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/ai agent.png")`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          zIndex: 0,
-          pointerEvents: 'none'
-        }}></div>
+        <div className="parallax-hero-bg" style={{ backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/ai agent.png")` }}></div>
 
-        <div className="hero-content-anchor" style={{ position: 'absolute', zIndex: 1, top: '50%', transform: 'translateY(-50%)' }}>
+        <div className="hero-content-anchor">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', maxWidth: '560px' }}>
             <span className="badge badge-gold" style={{ alignSelf: 'flex-start' }}>
               <Sparkles size={12} style={{ marginRight: '4px' }} /> ADVANCED CO-PILOT

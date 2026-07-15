@@ -76,20 +76,9 @@ export default function Features() {
     <div ref={rootRef} style={{ position: 'relative' }}>
       {/* Hero */}
       <section className="hero-section snap-section">
-        <div className="parallax-hero-bg" style={{
-          position: 'absolute',
-          top: '-10%',
-          left: 0,
-          right: 0,
-          bottom: '-10%',
-          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Features.png")`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          zIndex: 0,
-          pointerEvents: 'none'
-        }}></div>
+        <div className="parallax-hero-bg" style={{ backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Features.png")` }}></div>
 
-        <div className="hero-content-anchor" style={{ position: 'absolute', zIndex: 1, top: '50%', transform: 'translateY(-50%)' }}>
+        <div className="hero-content-anchor">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', maxWidth: '560px' }}>
             <span className="badge badge-teal" style={{ alignSelf: 'flex-start' }}>MODULE DIRECTORY</span>
             <h1 style={{ fontSize: 'clamp(2.2rem, 4vw, 3.2rem)', lineHeight: 1.15 }}>Core Modules & <span className="gradient-text">Features</span></h1>

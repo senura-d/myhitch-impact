@@ -97,6 +97,9 @@ html {
 }
 
 .hero-content-anchor {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
   left: var(--space-md);
   width: calc(100% - var(--space-md) * 2);
   max-width: 100%;

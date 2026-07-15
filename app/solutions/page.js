@@ -156,21 +156,9 @@ function SolutionsContent() {
     <div ref={rootRef} style={{ position: 'relative' }}>
       {/* 1. Hero Section */}
       <section className="hero-section snap-section">
-        <div className="parallax-hero-bg" style={{
-          position: 'absolute',
-          top: '-10%',
-          left: 0,
-          right: 0,
-          bottom: '-10%',
-          backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/solutions.png")`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 1,
-          zIndex: 0,
-          pointerEvents: 'none'
-        }}></div>
+        <div className="parallax-hero-bg" style={{ backgroundImage: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/solutions.png")` }}></div>
 
-        <div className="hero-content-anchor" style={{ position: 'absolute', zIndex: 1, top: '50%', transform: 'translateY(-50%)' }}>
+        <div className="hero-content-anchor">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', maxWidth: '540px' }}>
             <span className="badge badge-teal" style={{ alignSelf: 'flex-start', fontSize: '0.75rem' }}>
               TARGET SECTORS
