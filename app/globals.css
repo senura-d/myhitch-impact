@@ -130,6 +130,10 @@ html {
 @media (min-width: 768px) {
   .hero-content-anchor {
     left: 4%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0 !important;
   }
   .snap-section {
     min-height: calc(100vh - 85px);

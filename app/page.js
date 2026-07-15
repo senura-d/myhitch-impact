@@ -143,7 +143,7 @@ export default function Home() {
           pointerEvents: 'none'
         }}></div>
 
-        <div className="hero-content-anchor" style={{ position: 'absolute', zIndex: 1, top: '50%', transform: 'translateY(-50%)' }}>
+        <div className="hero-content-anchor" style={{ position: 'relative', zIndex: 1, marginTop: '2rem' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', maxWidth: '540px' }}>
             <div className="badge badge-teal" style={{ alignSelf: 'flex-start', fontSize: '0.75rem' }}>
               <Sparkles size={12} style={{ marginRight: '4px' }} /> AI-Powered Nonprofit Infrastructure
