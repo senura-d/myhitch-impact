@@ -636,8 +636,35 @@ export default function Home() {
               A modular platform that fits the governance models of public, private, and social sector organizations.
             </p>
 
-            {/* Tab Controls */}
-            <div style={{
+            {/* Tab Controls - Mobile Dropdown */}
+            <div className="mobile-only" style={{ width: '100%', marginTop: '1.5rem', justifyContent: 'center' }}>
+              <select 
+                value={activeTab} 
+                onChange={(e) => setActiveTab(e.target.value)}
+                style={{
+                  width: '100%',
+                  maxWidth: '300px',
+                  padding: '12px 16px',
+                  borderRadius: '12px',
+                  border: '1px solid var(--teal-500)',
+                  background: '#fff',
+                  fontSize: '0.95rem',
+                  fontWeight: 600,
+                  color: 'var(--text-primary)',
+                  boxShadow: 'var(--shadow-sm)',
+                  cursor: 'pointer',
+                  textTransform: 'uppercase'
+                }}
+              >
+                <option value="ngos">NGOs & Charities</option>
+                <option value="schools">Schools & Education</option>
+                <option value="community">Community Groups</option>
+                <option value="enterprises">Social Enterprises</option>
+              </select>
+            </div>
+
+            {/* Tab Controls - Desktop */}
+            <div className="desktop-only" style={{
               display: 'flex',
               flexWrap: 'wrap',
               justifyContent: 'center',
