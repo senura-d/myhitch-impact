@@ -104,7 +104,7 @@ html {
    of that busy imagery, so wash it out with a scrim for legibility. */
 @media (max-width: 767px) {
   .hero-section {
-    min-height: 460px;
+    min-height: calc(100vh - 85px);
   }
   .hero-section::before {
     content: '';
